@@ -370,7 +370,7 @@
   #define SPEED_COEFFICIENT       8192    //  0.5f
   #define STEER_COEFFICIENT       62259   // -0.2f
   // #define SUPPORT_BUTTONS                 // Define for Nunchuk buttons support
-#endif
+#endif:
 // ############################# END OF VARIANT_NUNCHUK SETTINGS #########################
 
 
@@ -407,7 +407,7 @@
   #if defined(CONTROL_PPM_RIGHT) && !defined(DUAL_INPUTS)
     #define DEBUG_SERIAL_USART2           // left sensor cable debug
   #elif defined(CONTROL_PPM_LEFT) && !defined(DUAL_INPUTS)
-    #define DEBUG_SERIAL_USART3           // right sensor cable debug
+    // #define DEBUG_SERIAL_USART3           // right sensor cable debug
   #endif
 #endif
 // ############################# END OF VARIANT_PPM SETTINGS ############################
