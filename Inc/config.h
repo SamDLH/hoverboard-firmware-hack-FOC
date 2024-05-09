@@ -263,7 +263,7 @@
 
 
 // ################################# VARIANT_ADC SETTINGS ############################
-#ifdef VARIANT_ADC
+//#ifdef VARIANT_ADC
 /* CONTROL VIA TWO POTENTIOMETERS
  * Connect potis to left sensor board cable (0 to 3.3V) (do NOT use the red 15V wire!)
  *
@@ -310,7 +310,7 @@
 
 
 // ############################ VARIANT_USART SETTINGS ############################
-#ifdef VARIANT_USART
+//#ifdef VARIANT_USART
   // #define SIDEBOARD_SERIAL_USART2 0
   #define CONTROL_SERIAL_USART2  0    // left sensor board cable, disable if ADC or PPM is used! For Arduino control check the hoverSerial.ino
   #define FEEDBACK_SERIAL_USART2      // left sensor board cable, disable if ADC or PPM is used!
@@ -341,7 +341,7 @@
 
 
 // ################################# VARIANT_NUNCHUK SETTINGS ############################
-#ifdef VARIANT_NUNCHUK
+//#ifdef VARIANT_NUNCHUK
   /* on Right sensor cable
    * keep cable short, use shielded cable, use ferrits, stabalize voltage in nunchuk,
    * use the right one of the 2 types of nunchuks, add i2c pullups.
@@ -400,7 +400,7 @@
   #define PPM_NUM_CHANNELS        6       // total number of PPM channels to receive, even if they are not used.
 
   // #define TANK_STEERING                   // use for tank steering, each input controls each wheel 
-  // #define SUPPORT_BUTTONS                 // Define for PPM buttons support
+  #define SUPPORT_BUTTONS                 // Define for PPM buttons support
   // #define SUPPORT_BUTTONS_LEFT            // use left sensor board cable for button inputs.  Disable DEBUG_SERIAL_USART2!
    #define SUPPORT_BUTTONS_RIGHT           // use right sensor board cable for button inputs. Disable DEBUG_SERIAL_USART3!
 
@@ -414,7 +414,7 @@
 
 
 // ################################# VARIANT_PWM SETTINGS ##############################
-#ifdef VARIANT_PWM
+//#ifdef VARIANT_PWM
 /* ###### CONTROL VIA RC REMOTE ######
  * Right sensor board cable. Connect PA2 to channel 1 and PA3 to channel 2 on receiver.
  * Channel 1: steering, Channel 2: speed.
@@ -456,7 +456,7 @@
 
 
 // ################################# VARIANT_IBUS SETTINGS ##############################
-#ifdef VARIANT_IBUS
+//#ifdef VARIANT_IBUS
 /* CONTROL VIA RC REMOTE WITH FLYSKY IBUS PROTOCOL 
 * Connected to Right sensor board cable. Channel 1: steering, Channel 2: speed.
 */
@@ -497,7 +497,7 @@
 
 
 // ############################ VARIANT_HOVERCAR SETTINGS ############################
-#ifdef VARIANT_HOVERCAR
+//#ifdef VARIANT_HOVERCAR
   #define FLASH_WRITE_KEY         0x1107  // Flash memory writing key. Change this key to ignore the input calibrations from the flash memory and use the ones in config.h
   #undef  CTRL_MOD_REQ
   #define CTRL_MOD_REQ            VLT_MODE  // HOVERCAR works best in TORQUE Mode. VOLTAGE mode is preffered when freewheeling is not desired when throttle is released.
